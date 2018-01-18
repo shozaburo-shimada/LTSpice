@@ -1,0 +1,15 @@
+* D:\Users\Shozaburo\Docuement\git\LTSpice\OpAmp\VoltageFollower.asc
+Ro out1 Vin 100
+R1 out2 out1 100
+C1 out2 0 680p
+Vin Vin 0 AC 1
+Vcc+ N001 0 15
+Vcc- N003 0 -15
+C2 Out3 0 680p
+R2 N002 Out3 {RL}
+XU2 Vin N002 N001 N003 N002 LT1128
+.ac dec 30 0.001 100MEG
+.step param RL LIST 0.1 10 270
+.lib LTC.lib
+.backanno
+.end

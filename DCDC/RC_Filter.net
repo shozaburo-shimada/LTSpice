@@ -1,0 +1,11 @@
+* D:\Users\Shozaburo\Docuement\git\LTSpice\DCDC\RC_Filter.asc
+Ro out1 Vin 100k
+R1 N002 out1 500
+C1 N002 0 1µ
+V1 Vin 0 AC 1
+Ro1 N001 Vin 100k
+R2 N001 out2 500
+C2 out2 0 1µ
+.ac dec 20 1m 10MEG
+.backanno
+.end

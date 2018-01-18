@@ -1,0 +1,8 @@
+* D:\Users\Shozaburo\Docuement\git\LTSpice\Basic\VoltageDependentVoltageSouce.asc
+E1 OUT 0 IN 0 2
+R1 0 IN 1k
+R2 0 OUT 1k
+V1 IN 0 1
+.tran 10
+.backanno
+.end
